@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#323435">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#221c1c">
+</head>
+<body>
+
+    <header class="site-header" id="top">
+        <div class="site-header__container container">
+            <div class="site-header__wrapper">
+                <button class="site-header__menu"><img class="site-header__menu-img" src="img/burger-menu.svg" alt="Menu img" width="20" height="20"></button>
+                <a class="site-header__logo logo" href="#">
+                    <img class="logo__img" src=".//img/site-logo.svg" alt="site logo" width="137" height="20">
+                </a>
+                <nav class="site-header__nav nav">
+                    <div class="nav__btn-wrapper"><button class="nav__close-btn"><img src="img/close-img.svg" width="20" height="20" alt="Nav close img"></button></div>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Collections</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Men</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Women</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="nav__window-closer"></div>
+                </nav>
+
+                <div class="site-header__cart-wrapper cart">
+                    <button class="cart__btn">
+                        <svg class="cart__img" width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+                            <g id="cart">
+                            <path id="Shape" clip-rule="evenodd" d="M3.86313 3.64139H20.9246C21.5077 3.64139 21.9352 4.19014 21.7941 4.75489L19.9732 12.0381C19.8781 12.4181 19.5473 12.6924 19.1563 12.7153L4.83452 13.557C5.09057 14.1554 5.68378 14.5661 6.36452 14.5661H16.3727C17.8709 14.5661 19.0897 15.7849 19.0897 17.2831C19.0897 18.7812 17.8709 20 16.3727 20C14.4955 20 13.1758 18.1275 13.818 16.3584H8.91319C9.55625 18.1298 8.23365 20 6.35846 20C4.09916 20 2.83011 17.3851 4.21903 15.6114C3.44867 15.0012 3.00149 14.1031 2.92835 13.2755C1.79349 0.631508 1.84298 1.18296 1.9492 2.36648L1.94921 2.36663L1.94928 2.36744C2.02069 3.1631 2.11759 4.24273 1.89764 1.79232H0.896159C0.401223 1.79232 0 1.39109 0 0.896159C0 0.401223 0.401223 0 0.896159 0H2.71694C3.18081 0 3.56803 0.354025 3.60951 0.816059L3.86313 3.64139ZM5.43388 17.2831C5.43388 17.7929 5.84867 18.2077 6.35846 18.2077C6.86829 18.2077 7.28308 17.7929 7.28308 17.2831C7.28308 16.7732 6.86829 16.3584 6.35846 16.3584C5.84867 16.3584 5.43388 16.7732 5.43388 17.2831ZM16.3727 18.2077C15.8629 18.2077 15.4481 17.7929 15.4481 17.2831C15.4481 16.7732 15.8629 16.3584 16.3727 16.3584C16.8825 16.3584 17.2973 16.7732 17.2973 17.2831C17.2973 17.7929 16.8825 18.2077 16.3727 18.2077ZM4.59328 11.7758L18.394 10.9648L19.7769 5.43367H4.02401L4.59328 11.7758Z" fill="currentColor"/>
+                            </g>
+                            </svg>
+                            <span class="cart__count js-cart-count">0</span>
+                    </button>
+
+                    <div class="cart__inner inner">
+                        <h3 class="inner__title">Cart</h3>
+                        <div class="empty">Your cart is empty.</div>
+                        <div class="products">
+                            <ul class="inner__list">
+                                <li class="inner__item">
+                                    <img class="inner__img" src="./img/trainers.jpg" alt="trainers img" width="50" height="50" srcset="./img/trainers.jpg 1x, ./img/trainers@2x.jpg 2x">
+                                    <div class="inner__info info">
+                                        <p class="info__text">Fall Limited Edition Sneakers</p>
+                                        <p class="info__price">$125.00 x 0<span class="bold">$00.00</span></p>
+                                    </div>
+                                    <button class="inner__delete">
+                                        <img class="inner__delete-img" src="./img/delete-icon.svg" alt="delete icon" width="14" height="16">
+                                    </button>
+                                </li>
+                            </ul>
+                            <button class="inner__btn">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="site-header__user user">
+                    <img class="user__img" src="./img/user.jpg" alt="user img" width="50" height="50" srcset="./img/user-img.jpg 1x, ./img/user-img@2x.jpg 2x">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="container">
+            <div class="block">
+            <div class="block__container">
+                <div class="block__imgs">
+                    <div class="block__img-wrapper">
+                        <button class="block_big-img-btn"><img class="block__img-big" src="./img/img-big.jpg" alt="trainers img" width="445" height="455"></button>
+                    </div>
+                    <ul class="block__thumbs">
+                        <li class="block__thumb">
+                            <button class="block__btn js-block-btn active" data-img-big="./img/img-big.jpg">
+                                <img src="./img/img1.jpg" alt="" class="block__img-small">
+                            </button>
+                        </li>
+                        <li class="block__thumb">
+                            <button class="block__btn js-block-btn" data-img-big="./img/img2-big.jpg">
+                                <img src="./img/img2.jpg" alt="" class="block__img-small">
+                            </button>
+                        </li>
+                        <li class="block__thumb">
+                            <button class="block__btn js-block-btn" data-img-big="./img/img3-big.jpg">
+                                <img src="./img/img3.jpg" alt="" class="block__img-small">
+                            </button>
+                        </li>
+                        <li class="block__thumb">
+                            <button class="block__btn js-block-btn" data-img-big="./img/img4-big.jpg">
+                                <img src="./img/img4.jpg" alt="" class="block__img-small">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block__content content">
+                    <div class="content__info">Sneaker Company</div>
+                    <h1 class="content__title">Fall Limited Edition Sneakers</h1>
+                    <p class="content__text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                    <div class="content__prices prices">
+                        <div class="prices__new">$125.00 <span class="prices__badge">50%</span></div>
+                        <div class="prices__old">$250.00</div>
+                    </div>
+                    <div class="content__btns btns">
+                        <div class="btns__count count">
+                            <button class="count__calc js-dec-btn"><span>-</span></button>
+                            <div class="count__display js-count-display">0</div>
+                            <button class="count__calc js-inc-btn"><span>+</span></button>
+                        </div>
+                        <a href="#top">
+                            <button class="btns__cart">
+                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.0905 2.91311H16.7397C17.2062 2.91311 17.5482 3.35211 17.4353 3.80391L15.9785 9.63048C15.9025 9.93446 15.6378 10.1539 15.3251 10.1723L3.86762 10.8456C4.07245 11.3243 4.54702 11.6529 5.09162 11.6529H13.0982C14.2967 11.6529 15.2717 12.628 15.2717 13.8264C15.2717 15.0249 14.2967 16 13.0982 16C11.5964 16 10.5406 14.502 11.0544 13.0868H7.13056C7.645 14.5038 6.58692 16 5.08677 16C3.27933 16 2.26409 13.9081 3.37522 12.4891C2.75894 12.0009 2.40119 11.2825 2.34268 10.6204C1.43419 0.498541 1.47444 0.946953 1.55953 1.89506L1.56008 1.9012C1.61714 2.53699 1.6934 3.38676 1.51811 1.43385H0.716927C0.320978 1.43385 0 1.11288 0 0.716927C0 0.320978 0.320978 0 0.716927 0H2.17355C2.54465 0 2.85443 0.28322 2.88761 0.652847L3.0905 2.91311ZM4.3471 13.8264C4.3471 14.2343 4.67894 14.5661 5.08677 14.5661C5.49463 14.5661 5.82647 14.2343 5.82647 13.8264C5.82647 13.4186 5.49463 13.0868 5.08677 13.0868C4.67894 13.0868 4.3471 13.4186 4.3471 13.8264ZM13.0982 14.5661C12.6903 14.5661 12.3585 14.2343 12.3585 13.8264C12.3585 13.4186 12.6903 13.0868 13.0982 13.0868C13.506 13.0868 13.8379 13.4186 13.8379 13.8264C13.8379 14.2343 13.506 14.5661 13.0982 14.5661ZM3.67463 9.42062L14.7152 8.77181L15.8215 4.34693H3.21921L3.67463 9.42062Z" fill="white"/>
+                                    </svg>
+                                    Add to cart
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+         </div>
+
+        <div class="modal">
+            <div class="modal__inner">
+                <div class="modal__btn-wrapper">
+                    <button class="modal__x-btn"><svg class="modal__x-btn-img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.85714L17.1429 0L10 7.14286L2.85714 0L0 2.85714L7.14286 10L0 17.1429L2.85714 20L10 12.8571L17.1429 20L20 17.1429L12.8571 10L20 2.85714Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal__imgs">
+                    <div class="block__imgs">
+                        <div class="block__img-wrapper">
+                            <button class="block_big-img-btn"><img class="block__img-big js-modal-img-big" src="./img/img-big.jpg" alt="trainers img" width="555" height="555"></button>
+                            <button class="modal__btns btn--next">
+                                <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="3"/>
+                                </svg>
+                            </button>
+                            <button class="modal__btns btn--prev">
+                                <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 2L3 10L11 18" stroke="currentColor" stroke-width="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="block__thumbs">
+                            <li class="block__thumb js-block-modal-thumbs active" data-img-big="./img/img-big.jpg">
+                                <button class="block__btn js-modal-btn" data-img-big="./img/img-big.jpg">
+                                    <img src="./img/img1.jpg" alt="" class="block__img-small">
+                                </button>
+                            </li>
+                            <li class="block__thumb js-block-modal-thumbs" data-img-big="./img/img2-big.jpg">
+                                <button class="block__btn js-modal-btn" data-img-big="./img/img2-big.jpg">
+                                    <img src="./img/img2.jpg" alt="" class="block__img-small">
+                                </button>
+                            </li>
+                            <li class="block__thumb js-block-modal-thumbs" data-img-big="./img/img3-big.jpg">
+                                <button class="block__btn js-modal-btn" data-img-big="./img/img3-big.jpg">
+                                    <img src="./img/img3.jpg" alt="" class="block__img-small">
+                                </button>
+                            </li>
+                            <li class="block__thumb js-block-modal-thumbs" data-img-big="./img/img4-big.jpg">
+                                <button class="block__btn js-modal-btn" data-img-big="./img/img4-big.jpg">
+                                    <img src="./img/img4.jpg" alt="" class="block__img-small">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="loader-wrapper">
+        <div class="lds-hourglass"></div>
+    </div>
+
+    <div class="cart-closer-window"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
